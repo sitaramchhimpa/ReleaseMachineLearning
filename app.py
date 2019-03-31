@@ -15,8 +15,8 @@ def predict_release_status(qa,uat,prod,count):
 
     output['release_Status_result'] = ml.predict(x_input)[0]
     print( output )
-    #return ['Release_status_Result', np.int(output['release_Status_result'].item())]
-    return output
+    return ['Release_status_Result', np.int(output['release_Status_result'].item())]
+    # return output
 
 app = Flask(__name__)
 
